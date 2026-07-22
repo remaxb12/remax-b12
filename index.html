@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REMAX B12 | Corretores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --wine:#7A1128;
+    --red:#E4162C;
+    --navy:#0A1B3D;
+    --blue:#1656F2;
+    --cream:#F5F0E6;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Poppins', sans-serif;
+    background:var(--navy);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+  }
+  .wrap{
+    width:100%;
+    max-width:430px;
+    background:var(--cream);
+    min-height:100vh;
+  }
+  .hero{
+    position:relative;
+    background:var(--navy);
+    padding:34px 20px 40px;
+    text-align:center;
+  }
+  .hero-brand-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+  }
+  .pin-outer{
+    width:60px; height:60px;
+    flex-shrink:0;
+    border-radius:50% 50% 50% 0;
+    transform:rotate(-45deg);
+    overflow:hidden;
+    position:relative;
+    border:3px solid var(--cream);
+    box-shadow:0 6px 16px rgba(0,0,0,0.4);
+  }
+  .pin-inner{
+    position:absolute;
+    inset:0;
+    transform:rotate(45deg);
+    background:conic-gradient(var(--red) 0 90deg, var(--blue) 90deg 180deg, var(--navy) 180deg 270deg, var(--wine) 270deg 360deg);
+  }
+  .pin-inner::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; top:42%; height:16%;
+    background:var(--cream);
+  }
+  .hero-text{
+    color:var(--cream);
+    font-weight:800;
+    font-size:22px;
+    letter-spacing:1.5px;
+  }
+  .list{
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .broker-link{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    text-decoration:none;
+    background:#fff;
+    border-radius:14px;
+    padding:14px 16px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+  }
+  .broker-link .dot{
+    width:14px; height:14px;
+    border-radius:50%;
+    background:var(--red);
+    flex-shrink:0;
+  }
+  .broker-link span.name{
+    font-weight:600;
+    color:var(--navy);
+    font-size:15px;
+  }
+  footer{
+    text-align:center;
+    padding:14px 20px 30px;
+    font-size:11px;
+    color:#777;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-brand-row">
+        <div class="pin-outer"><div class="pin-inner"></div></div>
+        <div class="hero-text">REMAX B12</div>
+      </div>
+    </div>
+    <div class="list">
+      <a class="broker-link" href="francine/">
+        <span class="dot"></span>
+        <span class="name">Francine Ferreira</span>
+      </a>
+      <!-- Novo corretor: copie o bloco acima trocando o link e o nome -->
+    </div>
+    <footer>REMAX B12</footer>
+  </div>
+</body>
+</html>
