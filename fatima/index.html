@@ -1,0 +1,211 @@
+Aqui está — copie exatamente entre <!DOCTYPE html> e </html>, nada antes ou depois:
+
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fátima Alves dos Santos | REMAX B12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --wine:#7A1128;
+    --red:#E4162C;
+    --navy:#0A1B3D;
+    --blue:#1656F2;
+    --cream:#F5F0E6;
+    --ink:#151515;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Poppins', sans-serif;
+    background:var(--navy);
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+  }
+  .card{
+    width:100%;
+    max-width:430px;
+    background:var(--cream);
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .hero{
+    position:relative;
+    background:var(--navy);
+    padding:34px 20px 40px;
+    text-align:center;
+  }
+  .hero-brand-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+  }
+  .pin-outer{
+    width:60px; height:60px;
+    flex-shrink:0;
+    border-radius:50% 50% 50% 0;
+    transform:rotate(-45deg);
+    overflow:hidden;
+    position:relative;
+    border:3px solid var(--cream);
+    box-shadow:0 6px 16px rgba(0,0,0,0.4);
+  }
+  .pin-inner{
+    position:absolute;
+    inset:0;
+    transform:rotate(45deg);
+    background:conic-gradient(var(--red) 0 90deg, var(--blue) 90deg 180deg, var(--navy) 180deg 270deg, var(--wine) 270deg 360deg);
+  }
+  .pin-inner::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; top:42%; height:16%;
+    background:var(--cream);
+  }
+  .brand-name{
+    color:var(--cream);
+    font-weight:800;
+    font-size:22px;
+    letter-spacing:1.5px;
+  }
+
+  .photo-wrap{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    margin-top:-30px;
+    z-index:3;
+  }
+  .photo-wrap img{
+    width:150px; height:150px;
+    border-radius:18px;
+    object-fit:cover;
+    border:5px solid var(--cream);
+    box-shadow:0 8px 22px rgba(0,0,0,0.35);
+    background:#ddd;
+  }
+
+  .info{
+    text-align:center;
+    padding:14px 28px 0;
+  }
+  .info h1{
+    font-size:22px;
+    font-weight:700;
+    color:var(--navy);
+  }
+  .info .role{
+    margin-top:4px;
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--red);
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+  }
+  .info .creci{
+    margin-top:6px;
+    font-size:13px;
+    color:#444;
+    font-weight:500;
+  }
+
+  .actions{
+    margin-top:18px;
+    padding:0 24px 28px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .btn{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    text-decoration:none;
+    padding:11px 16px;
+    border-radius:14px;
+    font-weight:700;
+    font-size:14.5px;
+    color:var(--navy);
+    background:#ffffff;
+    border:1px solid rgba(10,27,61,0.08);
+    box-shadow:0 3px 8px rgba(0,0,0,0.06);
+    transition:transform .15s ease;
+  }
+  .btn:active{ transform:scale(0.97); }
+  .btn .icon{
+    width:38px; height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    box-shadow:0 2px 6px rgba(0,0,0,0.18);
+  }
+  .btn .icon.squircle{ border-radius:28%; }
+  .btn .icon.circle{ border-radius:50%; }
+  .btn .icon svg{ width:21px; height:21px; }
+  .icon.wa-icon{ background:linear-gradient(135deg,#6bfc9c,#12c95e); }
+  .icon.ig-icon{ background:linear-gradient(135deg,#4f5bd5 0%,#962fbf 30%,#d62976 55%,#fa7e1e 80%,#feda75 100%); }
+  .icon.site-icon{ background:#1179c9; }
+  .icon.phone-icon{ background:#27ae60; }
+  .icon.email-icon{ background:var(--navy); }
+
+  footer{
+    text-align:center;
+    padding:10px 20px 26px;
+    font-size:11px;
+    color:#777;
+  }
+  footer b{ color:var(--navy); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="hero">
+      <div class="hero-brand-row">
+        <div class="pin-outer"><div class="pin-inner"></div></div>
+        <div class="brand-name">REMAX B12</div>
+      </div>
+    </div>
+
+    <div class="photo-wrap">
+      <img src="fatima.jpg" alt="Fátima Alves dos Santos">
+    </div>
+
+    <div class="info">
+      <h1>Fátima Alves dos Santos</h1>
+      <div class="role">Corretora de Imóveis</div>
+      <div class="creci"><b>CRECI</b> 295683-F</div>
+    </div>
+
+    <div class="actions">
+      <a class="btn whatsapp" href="https://wa.me/5511952671108" target="_blank" rel="noopener">
+        <span class="icon squircle wa-icon"><svg viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.15-1.75-.86-2-.96-.28-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5-.17-.01-.37-.01-.57-.01a1.1 1.1 0 0 0-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.75-.71 2-1.4.25-.7.25-1.29.17-1.4-.07-.13-.27-.2-.57-.35z"/><path d="M12.03 2C6.5 2 2.05 6.44 2.05 11.94c0 1.87.5 3.62 1.4 5.14L2 22l5.1-1.34a9.95 9.95 0 0 0 4.93 1.3h.01c5.52 0 10-4.44 10-9.94C22.03 6.44 17.55 2 12.03 2zm0 18.13h-.01a8.1 8.1 0 0 1-4.14-1.14l-.3-.18-3.08.81.82-3-.2-.31a8.14 8.14 0 0 1-1.25-4.37c0-4.5 3.68-8.16 8.2-8.16 2.2 0 4.26.86 5.81 2.4a8.06 8.06 0 0 1 2.4 5.76c0 4.5-3.68 8.19-8.25 8.19z"/></svg></span> WhatsApp
+      </a>
+      <a class="btn site" href="https://fatimadossantos.remax.com.br" target="_blank" rel="noopener">
+        <span class="icon circle site-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M4.2 7.5h15.6"/><path d="M4.2 16.5h15.6"/></svg></span> Visitar site
+      </a>
+      <a class="btn instagram" href="https://instagram.com/fatima_alves_santos" target="_blank" rel="noopener">
+        <span class="icon squircle ig-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.15" fill="white" stroke="none"/></svg></span> @fatima_alves_santos
+      </a>
+      <a class="btn email" href="mailto:fatimadossantos@remax.com.br">
+        <span class="icon circle email-icon"><svg viewBox="0 0 16 16" fill="white"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg></span> fatimadossantos@remax.com.br
+      </a>
+      <a class="btn phone" href="tel:+551128136000">
+        <span class="icon circle phone-icon"><svg viewBox="0 0 16 16" fill="white"><path d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.008c-.362-1.032-.037-2.137.703-2.877z"/></svg></span> (11) 2813-6000
+      </a>
+    </div>
+
+    <footer>
+      <b>REMAX B12</b>
+    </footer>
+  </div>
+</body>
+</html>
